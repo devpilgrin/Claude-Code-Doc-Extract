@@ -1,0 +1,31 @@
+{
+  "name": "doc-extract",
+  "version": "1.0.0",
+  "description": "Auto-extract text and images from PDF, DOCX, XLSX into .temp/ on Read. No external apps — pure JS.",
+  "author": "Claude Code Plugin",
+  "commands": [
+    {
+      "name": "extract-doc",
+      "description": "Extract content from a document into .temp/<filename>/ as markdown with embedded images",
+      "arguments": [
+        { "name": "file", "description": "Path to PDF, DOCX, or XLSX file", "required": true }
+      ]
+    },
+    {
+      "name": "doc-extracted",
+      "description": "Check if a document has been extracted and return path to extracted data",
+      "arguments": [
+        { "name": "file", "description": "Path to original document", "required": false }
+      ]
+    }
+  ],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "handler": "./hooks/pre-read.mjs"
+      }
+    ]
+  },
+  "keywords": ["pdf", "docx", "xlsx", "extract", "markdown", "images", "auto-intercept"]
+}
