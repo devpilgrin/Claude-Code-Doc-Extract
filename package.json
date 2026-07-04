@@ -1,10 +1,13 @@
 {
-  "name": "doc-extract",
+  "name": "@devpilgrin/claude-code-doc-extract",
   "version": "1.0.0",
   "description": "Claude Code plugin: auto-extract PDF, DOCX, XLSX to Markdown with embedded images. Zero native deps — pure JavaScript.",
   "main": "index.mjs",
   "type": "module",
-  "bin": { "doc-extract": "./cli.mjs" },
+  "bin": { "doc-extract": "cli.mjs" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "keywords": [
     "claude-code",

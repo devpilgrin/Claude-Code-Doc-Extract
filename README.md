@@ -33,14 +33,16 @@ Output lands in `.temp/<filename>/index.md` with images in `.temp/<filename>/ima
 ### Installation
 
 ```bash
-# Install from GitHub:
+# Install from GitHub Packages:
+npm install -g @devpilgrin/claude-code-doc-extract
+
+# Or from git:
 npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 
-# Or clone and link:
+# Or clone and link locally:
 git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 cd Claude-Code-Doc-Extract
-npm install
-npm link
+npm install && npm link
 ```
 
 ### Usage
@@ -102,14 +104,16 @@ Everything runs in Node.js. No Python, no LibreOffice, no MS Office required.
 ### Установка
 
 ```bash
-# Установка из GitHub:
+# Установка из GitHub Packages:
+npm install -g @devpilgrin/claude-code-doc-extract
+
+# Или из git:
 npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 
 # Или клонировать и установить локально:
 git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 cd Claude-Code-Doc-Extract
-npm install
-npm link
+npm install && npm link
 ```
 
 ### Использование
