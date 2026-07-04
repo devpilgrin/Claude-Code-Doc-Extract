@@ -32,18 +32,34 @@ Output lands in `.temp/<filename>/index.md` with images in `.temp/<filename>/ima
 
 ### Installation
 
+**GitHub Packages** (requires auth — even for public packages):
+
 ```bash
-# Install from GitHub Packages:
-npm install -g @devpilgrin/claude-code-doc-extract --registry=https://npm.pkg.github.com
+# 1. Create a token at https://github.com/settings/tokens/new (scope: read:packages)
+# 2. Login or configure .npmrc:
 
-# Or via .npmrc (no --registry needed after):
+# Option A: login (interactive)
+npm login --registry=https://npm.pkg.github.com
+# Username: <your-github-username>
+# Password: <token>
+
+# Option B: add to ~/.npmrc
+# echo "//npm.pkg.github.com/:_authToken=<token>" >> ~/.npmrc
 # npm config set @devpilgrin:registry https://npm.pkg.github.com
-# npm install -g @devpilgrin/claude-code-doc-extract
 
-# Or from git:
+# 3. Install
+npm install -g @devpilgrin/claude-code-doc-extract --registry=https://npm.pkg.github.com
+```
+
+**From git** (no auth required):
+
+```bash
 npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
+```
 
-# Or clone and link locally:
+**Clone and link locally:**
+
+```bash
 git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 cd Claude-Code-Doc-Extract
 npm install && npm link
@@ -107,14 +123,34 @@ Everything runs in Node.js. No Python, no LibreOffice, no MS Office required.
 
 ### Установка
 
+**GitHub Packages** (требуется авторизация, даже для публичных пакетов):
+
 ```bash
-# Установка из GitHub Packages:
-npm install -g @devpilgrin/claude-code-doc-extract
+# 1. Создайте токен на https://github.com/settings/tokens/new (scope: read:packages)
+# 2. Залогиньтесь или настройте .npmrc:
 
-# Или из git:
+# Вариант A: интерактивный вход
+npm login --registry=https://npm.pkg.github.com
+# Username: <ваш-логин-на-github>
+# Password: <токен>
+
+# Вариант B: добавить в ~/.npmrc
+# echo "//npm.pkg.github.com/:_authToken=<токен>" >> ~/.npmrc
+# npm config set @devpilgrin:registry https://npm.pkg.github.com
+
+# 3. Установка
+npm install -g @devpilgrin/claude-code-doc-extract --registry=https://npm.pkg.github.com
+```
+
+**Из git** (без авторизации):
+
+```bash
 npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
+```
 
-# Или клонировать и установить локально:
+**Клонировать и установить локально:**
+
+```bash
 git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 cd Claude-Code-Doc-Extract
 npm install && npm link
