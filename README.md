@@ -33,11 +33,14 @@ Output lands in `.temp/<filename>/index.md` with images in `.temp/<filename>/ima
 ### Installation
 
 ```bash
-# Install as a Claude Code plugin:
-claude plugins install doc-extract
+# Install from GitHub:
+npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 
-# Or install globally as a standalone CLI:
-npm install -g doc-extract
+# Or clone and link:
+git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
+cd Claude-Code-Doc-Extract
+npm install
+npm link
 ```
 
 ### Usage
@@ -99,11 +102,14 @@ Everything runs in Node.js. No Python, no LibreOffice, no MS Office required.
 ### Установка
 
 ```bash
-# Как плагин Claude Code:
-claude plugins install doc-extract
+# Установка из GitHub:
+npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
 
-# Или глобально как CLI:
-npm install -g doc-extract
+# Или клонировать и установить локально:
+git clone https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
+cd Claude-Code-Doc-Extract
+npm install
+npm link
 ```
 
 ### Использование
