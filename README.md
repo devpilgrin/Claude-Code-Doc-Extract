@@ -34,7 +34,11 @@ Output lands in `.temp/<filename>/index.md` with images in `.temp/<filename>/ima
 
 ```bash
 # Install from GitHub Packages:
-npm install -g @devpilgrin/claude-code-doc-extract
+npm install -g @devpilgrin/claude-code-doc-extract --registry=https://npm.pkg.github.com
+
+# Or via .npmrc (no --registry needed after):
+# npm config set @devpilgrin:registry https://npm.pkg.github.com
+# npm install -g @devpilgrin/claude-code-doc-extract
 
 # Or from git:
 npm install -g https://github.com/devpilgrin/Claude-Code-Doc-Extract.git
